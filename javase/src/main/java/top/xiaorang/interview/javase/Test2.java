@@ -8,19 +8,17 @@ import org.slf4j.LoggerFactory;
  * @description <p style = " font-weight:bold ; "><p/>
  * @github <a href="https://github.com/xihuanxiaorang/my-interview">my-interview</a>
  * @Copyright 博客：<a href="https://blog.xiaorang.fun">小让的糖果屋</a>  - show me the code
- * @date 2022/10/14 6:31
+ * @date 2022/11/23 10:05
  */
-public class Test1 {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Test1.class);
+public class Test2 {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Test2.class);
 
     public static void main(String[] args) {
-        Integer a1 = 100;
-        Integer a2 = 100;
-        Integer a3 = 128;
-        Integer a4 = 128;
-        int a5 = 128;
-        LOGGER.debug("a1 == a2？{}", a1 == a2);
-        LOGGER.debug("a3 == a4？{}", a3 == a4);
-        LOGGER.debug("a3 == a5？{}", a3 == a5);
+//        String s = new String("abc");
+//        String s1 = "abc" + "def";
+        String s2 = new String("abc") + new String("def");
+        s2.intern();
+        String s3 = "abcdef";
+        LOGGER.debug("s2 == s3？{}", s2 == s3);
     }
 }
